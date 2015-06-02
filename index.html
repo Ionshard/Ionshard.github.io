@@ -3,21 +3,33 @@ layout: default
 ---
 
 <div class="home">
+  <section>
+    <h1>Projects</h1>
+    <div class="row">
+      {% assign projects = (site.pages | where: "category", "project") %}
+      {% for p in projects %}
+        {% if p.title %}
+          <div class="col-md-4">
+            <h2><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></h2>
+            <p>{{ p.description }}</p>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
 
-  <h1>Posts</h1>
-
-  <ul class="post-list">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <p><a href="{{ "/blog" | prepend: site.baseurl }}">All Posts</a>
+  </section>
 </div>

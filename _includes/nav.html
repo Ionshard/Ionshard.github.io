@@ -1,0 +1,39 @@
+<nav class="nav nav-pills nav-stacked">
+  <ul class="nav nav-pills nav-stacked">
+
+    {% if page.url == "/index.html" %}
+      <li class="active"><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
+    {% else %}
+      <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
+    {% endif %}
+
+    {% assign pages = (site.pages | where: "category", "page") %}
+    {% for p in pages %}
+      {% if p.title %}
+        {% if page.url == p.url %}
+          <li class="active"><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
+        {% else %}
+          <li><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
+        {% endif %}
+        
+      {% endif %}
+    {% endfor %}
+
+    <li>
+      <p>Projects</p>
+      <ul class="nav nav-pills nav-stacked">
+        {% assign projects = (site.pages | where: "category", "project") %}
+        {% for p in projects %}
+          {% if p.title %}
+            {% if page.url == p.url %}
+              <li class="active"><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
+            {% else %}
+              <li><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
+            {% endif %}
+            
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+  </ul>
+</nav>
