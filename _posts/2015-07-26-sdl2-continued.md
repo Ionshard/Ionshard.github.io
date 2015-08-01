@@ -16,3 +16,6 @@ This is bringing me to a very interesting position. I am going to be developing 
 So it looks like it will be up to me to figure out how to implement a simple composition based game. I won't be worrying about efficiency or "correctness" I will just be trying to avoid inheritance as much as possible and I will probably end up doing things that I should do better next time, but that's called learning.
 
 Off to make some C++ classes!
+
+
+[twinklebear]: http://www.willusher.io/pages/sdl2/
