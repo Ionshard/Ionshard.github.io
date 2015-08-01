@@ -12,27 +12,28 @@
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <div class="container">
 
-    <main class="page-content container">
-      {% if page.url == "/index.html" %}
-        <div class="jumbotron">
-          <h1>Ionshard Development</h1>
-          <p>Home of my projects, musings and anything else I come up with.</p>
+      <main class="page-content">
+        {% if page.url == "/index.html" %}
+          <div class="jumbotron">
+            <h1>Ionshard Development</h1>
+            <p>Home of my projects, musings and anything else I come up with.</p>
+          </div>
+        {% endif %}
+        <div class="row">
+          <div
+          <div class="col-sm-8 col-md-10">
+            {{ content }}
+          </div>
+          <aside class="col-sm-4 col-md-2">
+            {% include nav.html %}
+          </aside>
         </div>
-      {% endif %}
-      <div class="row">
-        <div
-        <div class="col-sm-8 col-md-10">
-          {{ content }}
-        </div>
-        <aside class="col-sm-4 col-md-2">
-          {% include nav.html %}
-        </aside>
-      </div>
-      <p class="pull-right rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-    </main>
+      </main>
 
-    {% include footer.html %}
+      {% include footer.html %}
+    </div>
 
     {% include foot.html %}
   </body>
