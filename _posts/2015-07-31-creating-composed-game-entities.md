@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Creating Composed Game Entities
-categories: []
-tags: []
+categories: [personal]
+tags: [gamedev ces]
 published: True
 date: 2015-07-31 17:20:34
 ---
