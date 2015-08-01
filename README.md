@@ -1,9 +1,14 @@
 Ionshard Website
 ==================
 
-Simple HTML5 Boilerplate + Jekyll + Twitter Boostrap Site
+Project and Resume Website for Corey Ling aka Kasuko
 
-This is the result of taking the [HTML5 Boilerplate](http://html5boilerplate.com/) and adjusting it for [Jekyll](http://jekyllrb.com/) with styling provided by [Twitter Bootstrap](http://getbootstrap.com/)
-Using the [Aspirin C](https://color.adobe.com/Aspirin-C-color-theme-251864/) Color Scheme
-and [Concrete Seamless](http://subtlepatterns.com/concrete-seamless/) background.
+
+## Credits
+* [HTML5 Boilerplate](http://html5boilerplate.com/)
+* [Jekyll](http://jekyllrb.com/)
+* [Twitter Bootstrap](http://getbootstrap.com/)
+* [Aspirin C Color Scheme](https://color.adobe.com/Aspirin-C-color-theme-251864/)
+* [Concrete Seamless Background](http://subtlepatterns.com/concrete-seamless/)
+* [Andrew Illarionov Image for Jumbotron](https://download.unsplash.com/photo-1437419764061-2473afe69fc2)
 
