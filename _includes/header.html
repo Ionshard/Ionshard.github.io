@@ -25,7 +25,9 @@
               {% assign projects = (site.pages | where: "category", "project") %}
               {% for p in projects %}
                 {% if p.title %}
-                  {% if page.url == p.url %}
+                  {% capture page_url %}{{(page.url | remove_first: "/" | split: '/' | first)}}{% endcapture %}
+                  {% capture p_url %}{{(p.url | remove_first: "/" | split: '/' | first)}}{% endcapture %}
+                  {% if page_url == p_url %}
                     <li class="active"><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
                   {% else %}
                     <li><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
@@ -39,7 +41,9 @@
           {% assign pages = (site.pages | where: "category", "page") %}
           {% for p in pages %}
             {% if p.title %}
-              {% if page.url == p.url %}
+              {% capture page_url %}{{(page.url | remove_first: "/" | split: '/' | first)}}{% endcapture %}
+              {% capture p_url %}{{(p.url | remove_first: "/" | split: '/' | first)}}{% endcapture %}
+              {% if page_url == p_url %}
                 <li class="active"><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
               {% else %}
                 <li><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>

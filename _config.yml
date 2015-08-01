@@ -13,3 +13,4 @@ google_analytics: UA-XXXXX-X
 
 # Build settings
 markdown: kramdown
+permalink: /blog/:categories/:year/:month/:day/:title/

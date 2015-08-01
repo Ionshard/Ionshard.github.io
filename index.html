@@ -5,12 +5,13 @@ layout: default
 <div class="home">
   <section>
     <h1>Projects</h1>
-    <div class="row">
+    <div class="row project-list">
       {% assign projects = (site.pages | where: "category", "project") %}
       {% for p in projects %}
         {% if p.title %}
           <div class="col-md-4">
-            <h2><a href="{{ p.url | prepend: site.baseurl }}"><i class="fa fa-bookmark"></i> {{ p.title }}</a></h2>
+            <h3><a href="{{ p.url | prepend: site.baseurl }}"><i class="fa fa-bookmark"></i> {{ p.title }}</a></h3>
+            <a href="{{ p.url | prepend: site.baseurl }}"><img src="{{ p.image }}"></a>
             <p>{{ p.description }}</p>
           </div>
         {% endif %}
@@ -19,17 +20,16 @@ layout: default
   </section>
 
   <section>
-    <h1>Recent Posts</h1>
+    <h1>Recent Posts</h1><a href="{{ "/blog" | prepend: site.baseurl }}">All Posts</a>
     <ul class="post-list">
     {% for post in site.posts %}
       <li class="post">
-        <h2>
+        <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-comments"></i> {{ post.title }} 
           <span class="post-meta">on {{ post.date | date: "%b %-d, %Y" }}</span> </a>
-        </h2>
+        </h3>
       </li>
     {% endfor %}
   </ul>
-  <p><a href="{{ "/blog" | prepend: site.baseurl }}">All Posts</a>
   </section>
 </div>
