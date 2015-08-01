@@ -3,8 +3,8 @@ layout: page
 title: Pyxis
 permalink: /pyxis/
 category: project
-description: Deprecated Linux CLI tool for listening to SiriusXM internet streams
-image: http://lorempixel.com/400/200/technics/
+description: Defunct Linux Command Line Interface Client for SIRIUS/XM Radio Streaming.
+image: pyxis.png
 ---
 
 TODO: Home for Pyxis

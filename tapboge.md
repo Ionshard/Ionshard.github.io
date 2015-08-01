@@ -3,8 +3,8 @@ layout: page
 title: Tapboge
 permalink: /tapboge/
 category: project
-description: An engine for developing AP based tiling browser based games
-image: http://lorempixel.com/400/200/technics/
+description: Fullstack Javascript Engine for Tiling Map Action Point Based Browser Games akin to Urban Dead.
+image: tapboge.png
 ---
 
 TODO: Home for Tapboge (WIP)

@@ -3,8 +3,8 @@ layout: page
 title: Meteor Shower
 permalink: /meteorshower/
 category: project
-description: Simple Pygame implementation of Missle Defense
-image: http://lorempixel.com/400/200/technics/
+description: Missile Defense Clone written in Python using the Pygame Library.
+image: meteorshower.png
 ---
 
 TODO: Home for Meteor Shower
