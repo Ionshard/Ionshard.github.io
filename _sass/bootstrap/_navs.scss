@@ -24,6 +24,7 @@
       &:focus {
         text-decoration: none;
         background-color: $nav-link-hover-bg;
+        color: $nav-link-hover-color;
       }
     }
 
@@ -121,6 +122,7 @@
     // Links rendered as pills
     > a {
       border-radius: $nav-pills-border-radius;
+      background-color: $nav-link-bg;
     }
     + li {
       margin-left: 2px;

@@ -425,7 +425,9 @@ $navbar-inverse-toggle-border-color:        #333 !default;
 
 //=== Shared nav styles
 $nav-link-padding:                          10px 15px !default;
-$nav-link-hover-bg:                         $gray-lighter !default;
+$nav-link-bg:                               rgba(0, 0, 0, 0.05) !default;
+$nav-link-hover-bg:                         $dark-blue !default;
+$nav-link-hover-color:                      $off-white !default;
 
 $nav-disabled-link-color:                   $gray-light !default;
 $nav-disabled-link-hover-color:             $gray-light !default;

@@ -11,4 +11,5 @@ Project and Resume Website for Corey Ling aka Kasuko
 * [Aspirin C Color Scheme](https://color.adobe.com/Aspirin-C-color-theme-251864/)
 * [Concrete Seamless Background](http://subtlepatterns.com/concrete-seamless/)
 * [Andrew Illarionov Image for Jumbotron](https://download.unsplash.com/photo-1437419764061-2473afe69fc2)
+* [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
 
