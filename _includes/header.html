@@ -22,7 +22,7 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              {% assign projects = (site.pages | where: "category", "project") %}
+              {% assign projects = (site.pages | where: "layout", "project") %}
               {% for p in projects %}
                 {% if p.title %}
                   {% capture page_url %}{{(page.url | remove_first: "/" | split: '/' | first)}}{% endcapture %}
@@ -38,7 +38,7 @@
             </ul>
           </li>
 
-          {% assign pages = (site.pages | where: "category", "page") %}
+          {% assign pages = (site.pages | where: "layout", "page") %}
           {% for p in pages %}
             {% if p.title %}
               {% capture page_url %}{{(page.url | remove_first: "/" | split: '/' | first)}}{% endcapture %}

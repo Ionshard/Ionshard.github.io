@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<div class="project">
+
+  <header class="project-header">
+    <h1 class="project-title">{{ page.title }}</h1>
+    <p class="project-meta">{{ page.date | date: "%b %-d, %Y" }}
+    {% if page.author %} • {{ page.author }}{% endif %}
+    {% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+
+  <article class="project-content">
+    
+    <p class="col-md-6">{{ page.description }}</p>
+
+    <div class="project-image col-md-6">
+      <img src="{{ page.image | prepend: "/img/" | prepend: site.baseurl }}">
+    </div>
+
+    <div class="project-about col-md-6">
+      <h3>About</h3>
+      {{ content }}
+    </div>
+
+    {% if page.gallery %}
+    <div class="project-gallery col-md-12">
+      <h3>Gallery</h3>
+      <div class="row">
+      {% for figure in page.gallery %}
+        <figure class="gallery-figure col-md-4">
+          <img src="{{ figure.image | prepend: "/img/" | prepend: site.baseurl }}" alt="{{ figure.caption }}" />
+          <figcaption>{{ figure.caption }}</figcaption>
+        </figure>
+      {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% assign posts = site.categories[page.category] %}
+    {% if posts %}
+    <div class="project-posts col-md-12">
+      <h3>Posts</h3>
+      {% include postlist.html posts=posts %}
+    </div>
+    {% endif %}
+
+  </article>
+
+</div>

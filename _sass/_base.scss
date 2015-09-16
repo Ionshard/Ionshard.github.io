@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro|Droid+Serif:400,700,400italic|Oswald:400,700);
+
 /* ==========================================================================
    Browse Happy prompt
    ========================================================================== */
@@ -55,6 +56,26 @@ a:hover, a:focus {
   font-size: 0.5em;
 }
 
+.project-image {
+  padding: 1em 15px;
+}
+
+.project-image img {
+  width: 100%;
+}
+
+.gallery-figure {
+  margin-bottom: 1.5em;
+}
+
+.gallery-figure img {
+  width: 100%;
+}
+
+.gallery-figure figcaption {
+  margin-left: 10px;
+}
+
 .jumbotron {
     background: url(../img/hero.jpeg) no-repeat bottom/cover;
     width: 100%;
@@ -89,7 +110,7 @@ footer .copyright {
   text-align: center;
 }
 
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : $screen-md-min) {
   .jumbotron {
     padding-bottom: 25%;
     height: 0;
@@ -107,5 +128,9 @@ footer .copyright {
 
   .post-list {
     padding-left: 10px;
+  }
+
+  .project-image {
+    float: right;
   }
 }
