@@ -8,4 +8,9 @@ thumb: tapboge.png
 image: tapboge.png
 ---
 
-TODO: Home for Tapboge (WIP)
+Tapboge is a current work in progress. Tapboge stands for Tiling Action Point Based Online Game Engine and is being implemented using the MEAN stack. The inspiration for this game is the now defunct [Nexus War][nw] and [Urban Dead][ud] both games I am quite fond of.
+
+This is a massive learning exercise across the entire stack so progress is slow.
+
+[nw]: http://nexuswar.com/
+[ud]: http://urbandead.com/
