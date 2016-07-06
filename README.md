@@ -1,7 +1,7 @@
 Ionshard Website
 ==================
 
-Project and Resume Website for Corey Ling aka Kasuko
+Project and Resume Website for Victor Ling aka Kasuko
 
 
 ## Credits
