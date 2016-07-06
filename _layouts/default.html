@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   {% include head.html %}
-    
+
   <body>
 
     {% include header.html %}
@@ -15,14 +15,13 @@
     <div class="container">
 
       <main class="page-content">
-        {% if page.url == "/index.html" %}
+        {% if page.url == "/" %}
           <div class="jumbotron">
             <h1>Ionshard Development</h1>
             <p>Home of my projects, musings and anything else I come up with.</p>
           </div>
         {% endif %}
         <div class="row">
-          <div
           <div class="col-sm-8 col-md-10">
             {{ content }}
           </div>
